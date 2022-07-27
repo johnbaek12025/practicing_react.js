@@ -72,6 +72,7 @@
     }
     function App() {
         const [index, setIndex] = React.useState("")
+
         const onSelect = (event) => {
             setIndex(event.target.value);
         }
@@ -93,5 +94,5 @@
     //태그 안에 첫 글자 대문자여야 한다.
     ReactDOM.render(<App/>, root);
 </script>
-
 </html>
+
