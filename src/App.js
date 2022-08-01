@@ -3,9 +3,17 @@ import { useEffect, useState } from "react";
 
 
 function Hello(){
-  useEffect(() => {
-    console.log("I am here!")
-  }, [])
+  // const byFn = () => {
+  //   console.log("bye :("); 
+  // }
+  // const hiFn = () => {
+  //   console.log("created :)");
+  //   return byFn; 
+  // }
+  useEffect(()=> {
+    console.log("hi :)");
+    return () => console.log("bye :(");
+  }, [])  
   return <h1>Hello</h1>;
 }
 
